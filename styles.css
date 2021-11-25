@@ -5,14 +5,18 @@
 .container{
     height: 100vh;
     width: 100%;
-    background-image: url(/IMG/background.png);
+    background-image: url(/IMG/pexels-bruno-thethe-1910225.png);
+    opacity: 1;
     background-position: center;
     background-size: cover;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
+    overflow: hidden;
 }
+
+/* Navigation--------------------------- */
 .navbar{
     width: 100%;
     height: 15vh;
@@ -21,16 +25,34 @@
     align-items: center;
 }
 .logo{
-    width: 160px;
+    width: 100px;
+    margin-top: 1.8em;
     cursor: pointer;
+    border-radius: 50%;
+    animation: movedown 1s linear 1;
+    animation-delay: .41s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
-.cart{
-    width: 40px;
-    cursor: pointer;
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        visibility: visible;
+}
+    100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        visibility: visible;
+}
 }
 nav{
     flex: 1;
     padding-left: 60px;
+    animation: movedown 1s linear 1;
+    animation-delay: .23s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 nav ul li{
     display: inline-block;
@@ -39,22 +61,78 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #333;
+    color: #fff;
+    font-size: 1.08em;
 }
+
+nav a:hover{
+    cursor: pointer;
+    color: #bfaae0;
+    text-decoration:underline;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .navbar{
+        width: 100%;
+        height: 15vh;
+        margin: auto;
+        display: flex;
+        /* text-align: center; */
+    }
+    .logo{
+        width: 80px;
+        margin-top: 1.8em;
+    }
+    nav{
+        flex: 1;
+        padding-left: 1px;
+        align-items: center;
+        text-align: center;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 0px 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1em;
+        /* text-align: center; */
+    }
+}
+
+/* Home Page Content------------ */
 .content h1{
     font-size: 60px;
-    font-weight: 100;
+    font-weight: 300;
     margin-top: 24px;
     margin-bottom: 15px;
-    color: #232d60;
+    color: #fff;
 }
 .content p{
     font-size: 20px;
-    color: #6a7199;
+    font-weight: 300;
+    color: #fff;
 }
 .content{
     margin-left: 10%;
     margin-top: 10%;
+    animation: moveright 1s linear 1;
+    animation-delay: .33s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+}
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+}
 }
 .content .btn{
     display: inline-block;
@@ -67,30 +145,93 @@ nav ul li a{
     color: #fff;
     box-shadow: 3px 8px 22px rgba(94, 28, 68, .15);
 }
-.arrow-icons{
-    margin-top: 40px;
-    display: flex;
-}
-.arrow-icons img{
-    width: 40px;
-    margin-right: 25px;
-}
+
 .feature-img{
-    height: 90%;
+    height: 85%;
     position: absolute;
+    border-radius: 15%;
     bottom: 0;
-    right: 160px;
+    right: 15em;
+    animation: zoomin 1s linear 1;
+    animation-delay: .58s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
+
+@keyframes zoomin{
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+}
+    100%{ transform: scale(1);
+        visibility: visible;
+}
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .content h1{
+        font-size: 2em;
+        font-weight: 300;
+        margin-top: 24px;
+        margin-bottom: 15px;
+    }
+    .content p{
+        font-size: 1em;
+    }
+    .content{
+        margin-left: 10%;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .content .btn{
+        display: inline-block;
+    }
+    .feature-img{
+        height: 40%;
+        border-radius: 15%;
+        bottom: 0;
+        right: 4em;
+        padding-bottom: 2em;
+    }
+}
+/* Social Network Icons-------------- */
 .social-links{
     transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
     position: absolute;
-    left: -80px;
-    bottom: 180px;
+    left: 13.5em;
+    bottom: 100px;
+    animation: moveup 1s linear 1;
+    animation-delay: .45s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
+@keyframes moveup{
+    0%{
+        transform: translateY(100px);
+        visibility: visible;
+}
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+}
+}
+
 .social-links a{
     text-decoration: none;
     color: #6a7199;
     padding-right: 20px;
     font-size: 14px;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .social-links{
+        transform: rotate(-90deg);
+        position: absolute;
+        left: 9.5em;
+        bottom: 25em;
+    }
+    .social-links a{
+        text-decoration: none;
+        color: #6a7199;
+        padding-right: 20px;
+        font-size: 14px;
+    }
 }
