@@ -76,12 +76,14 @@ nav a:hover{
         width: 100%;
         height: 15vh;
         margin: auto;
-        display: flex;
-        /* text-align: center; */
+        display: block;
+        text-align: center;
     }
     .logo{
         width: 80px;
+        margin: 0 auto;
         margin-top: 1.8em;
+        padding-bottom: 3px;
     }
     nav{
         flex: 1;
@@ -98,7 +100,7 @@ nav a:hover{
         text-decoration: none;
         color: #fff;
         font-size: 1em;
-        /* text-align: center; */
+        text-align: center;
     }
 }
 
@@ -176,20 +178,24 @@ nav a:hover{
     }
     .content p{
         font-size: 1em;
+        align-items: center;
     }
     .content{
-        margin-left: 10%;
-        margin-top: 10%;
+        margin: 0 auto;
+        margin-top: 3em;
         text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     .content .btn{
         display: inline-block;
+        margin: 0 auto;
     }
     .feature-img{
         height: 40%;
         border-radius: 15%;
         bottom: 0;
-        right: 4em;
+        right: 4.6rem;
         padding-bottom: 2em;
     }
 }
@@ -225,7 +231,8 @@ nav a:hover{
     .social-links{
         transform: rotate(-90deg);
         position: absolute;
-        left: 9.5em;
+        margin: 0 auto;
+        left: 8.1em;
         bottom: 25em;
     }
     .social-links a{
