@@ -177,21 +177,21 @@ nav a:hover{
         justify-content: center;
     }
     .feature-img{
-        height: 50%;
+        height: 45%;
         border-radius: 15%;
         bottom: 0;
-        right: 3.15rem;
+        right: 4.94em;
         padding-bottom: 2em;
     }
 }
 @media (min-width: 375px){
     .feature-img{
-        height: 50%;
+        height: 40%;
         border-radius: 15%;
         bottom: 0;
         right: 4.611rem;
-        padding-bottom: 2em;
-    }
+        padding-bottom: 8em;
+}
 }
 /* Social Network Icons-------------- */
 .social-links{
