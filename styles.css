@@ -136,17 +136,6 @@ nav a:hover{
         visibility: visible;
 }
 }
-.content .btn{
-    display: inline-block;
-    background: linear-gradient(45deg, #87adfe, #ff77cd);
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #fff;
-    box-shadow: 3px 8px 22px rgba(94, 28, 68, .15);
-}
 
 .feature-img{
     height: 85%;
@@ -169,7 +158,7 @@ nav a:hover{
         visibility: visible;
 }
 }
-@media (min-width: 320px) and (max-width: 767px){
+@media (min-width: 320px){
     .content h1{
         font-size: 2em;
         font-weight: 300;
@@ -187,15 +176,20 @@ nav a:hover{
         align-items: center;
         justify-content: center;
     }
-    .content .btn{
-        display: inline-block;
-        margin: 0 auto;
-    }
     .feature-img{
-        height: 40%;
+        height: 50%;
         border-radius: 15%;
         bottom: 0;
-        right: 4.6rem;
+        right: 3.15rem;
+        padding-bottom: 2em;
+    }
+}
+@media (min-width: 375px){
+    .feature-img{
+        height: 50%;
+        border-radius: 15%;
+        bottom: 0;
+        right: 4.611rem;
         padding-bottom: 2em;
     }
 }
@@ -203,8 +197,8 @@ nav a:hover{
 .social-links{
     transform: rotate(-90deg);
     position: absolute;
-    left: 13.5em;
-    bottom: 100px;
+    left: 1em;
+    bottom: 130px;
     animation: moveup 1s linear 1;
     animation-delay: .45s;
     visibility: hidden;
@@ -212,11 +206,11 @@ nav a:hover{
 }
 @keyframes moveup{
     0%{
-        transform: translateY(100px);
+        transform: translateY(100px) rotate(-90deg);
         visibility: visible;
 }
     100%{
-        transform: translateY(0);
+        transform: translateY (0) rotate(-90deg);
         visibility: visible;
 }
 }
@@ -227,14 +221,14 @@ nav a:hover{
     padding-right: 20px;
     font-size: 14px;
 }
-@media (min-width: 320px) and (max-width: 767px){
+@media (min-width: 320px){
     .social-links{
         transform: rotate(-90deg);
         position: absolute;
         margin: 0 auto;
-        left: 8.1em;
-        bottom: 25em;
-    }
+        left: -2em;
+        bottom: 15em;
+}
     .social-links a{
         text-decoration: none;
         color: #6a7199;
