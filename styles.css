@@ -82,7 +82,8 @@ nav a:hover{
     }
     .logo{
         width: 80px;
-        margin-left: -.5em;
+        /* margin-left: -.5em; */
+        margin-left: 0 auto;
         margin-top: 1.8em;
         padding-bottom: 3px;
     }
@@ -161,11 +162,11 @@ nav a:hover{
         visibility: visible;
 }
 }
-@media (min-width: 319px) and (max-width: 360px){
+@media (min-width: 319px) and (max-width: 650px){
     .content h1{
         font-size: 2em;
         font-weight: 300;
-        margin-top: 24px;
+        margin-top: 2em;
         margin-bottom: 15px;
     }
     .content p{
@@ -180,14 +181,16 @@ nav a:hover{
         justify-content: center;
     }
     .feature-img{
-        height: 45%;
-        border-radius: 15%;
-        bottom: 0;
-        right: 4.99em;
-        padding-bottom: 2em;
+        height: 50%;
+        display: block;
+        position: unset;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1em;
+        width: 50%;
     }
 }
-@media (min-width: 360.1px) and (max-width: 400px){
+/* @media (min-width: 360.1px) and (max-width: 400px){
     .content h1{
         font-size: 2em;
         font-weight: 300;
@@ -213,7 +216,7 @@ nav a:hover{
         margin-bottom: 5em;
         /* padding-bottom: 8em; */
 }
-}
+} */
 /* Social Network Icons-------------- */
 .social-links{
     transform: rotate(-90deg);
@@ -242,13 +245,13 @@ nav a:hover{
     padding-right: 20px;
     font-size: 14px;
 }
-@media (min-width: 320px){
+@media (min-width: 319px) and (max-width: 600px){
     .social-links{
-        transform: rotate(-90deg);
         position: absolute;
+        width: 100%;
+        text-align: center;
         margin: 0 auto;
-        left: -2em;
-        bottom: 15em;
+        bottom: 5em;
 }
     .social-links a{
         text-decoration: none;
@@ -256,4 +259,32 @@ nav a:hover{
         padding-right: 20px;
         font-size: 14px;
     }
+}
+@media (max-width: 426px){
+    .social-links{
+        transform: rotate(-360deg);
+        /* position: absolute;
+        margin: 0 auto;
+        left: 7.43em;
+        bottom: 5em; */
+}
+    /* .social-links a{
+        text-decoration: none;
+        color: #6a7199;
+        padding-right: 20px;
+        font-size: 14px;
+    } */
+}
+@media (max-width: 768px){
+    .home-social{
+        display: none;
+    }
+}
+/* Contact----------------------------------- */
+.contact-text{
+    font-size: 1.7em;
+    color: yellowgreen;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-top: 5em;
 }
