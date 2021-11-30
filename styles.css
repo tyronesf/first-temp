@@ -215,8 +215,6 @@ nav a:hover{
         right: 4.599em;
         margin-bottom: 5em;
         /* padding-bottom: 8em; */
-}
-} */
 /* Social Network Icons-------------- */
 .social-links{
     transform: rotate(-90deg);
@@ -234,10 +232,9 @@ nav a:hover{
         visibility: visible;
 }
     100%{
-        transform: translateY (0) rotate(-90deg);
+        transform: translateY(0) rotate(-90deg);
         visibility: visible;
-}
-}
+}}
 
 .social-links a{
     text-decoration: none;
@@ -245,8 +242,9 @@ nav a:hover{
     padding-right: 20px;
     font-size: 14px;
 }
-@media (min-width: 319px) and (max-width: 600px){
+@media (min-width: 319px) and (max-width: 427px){
     .social-links{
+        transform: rotate(-360deg);
         position: absolute;
         width: 100%;
         text-align: center;
@@ -268,12 +266,15 @@ nav a:hover{
         left: 7.43em;
         bottom: 5em; */
 }
-    /* .social-links a{
-        text-decoration: none;
-        color: #6a7199;
-        padding-right: 20px;
-        font-size: 14px;
-    } */
+@keyframes moveup{
+    0%{
+        transform: translateY(100px) rotate(-360deg);
+        visibility: visible;
+}
+    100%{
+        transform: translateY(0) rotate(-360deg);
+        visibility: visible;
+}}
 }
 @media (max-width: 768px){
     .home-social{
