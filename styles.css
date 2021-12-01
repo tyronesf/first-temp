@@ -318,6 +318,7 @@ nav a:hover{
     width: 25%;
     border-radius: 10%;
     display: block;
+    position: unset;
     margin-left: auto;
     margin-right: auto;
     margin-top: .5em;
@@ -338,7 +339,7 @@ nav a:hover{
 }
 @media (min-width: 320px)and (max-width: 600px){
     .about-img{
-        width: 45%;
+        width: 55%;
         margin-top: .5em;
     }
     
